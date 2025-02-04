@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolblast</title>
+    <link rel="shortcut icon" href="images/kolb.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">Kolblast</div>
+      <!-- <nav>
+        <a href="#">Trades</a>
+        <a href="#">Tokens</a>
+        <a href="#">Leaderboard</a>
+      </nav> -->
+      <div class="user">
+        <div class="social-buttons">
+            <a href="https://x.com/Kolblast">Follow us on Twitter</a>
+            <a href="https://t.me/Kolblast">Join our Telegram</a>
+            <a href="#">Buy $KOLB</a>
+          </div>
+        <button class="btn connect">Connect wallet</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>
+        Monitor Web3 influencers' on-chain wallet activity in
+        <span style="color: #3a8bff">real time.</span>
+      </h1>
+      <div class="search">
+        <input type="text" placeholder="Enter wallet address">
+        <button>🔍</button>
+      </div>
+
+
+      <div class="page__tabs">
+   
+        <button class="page__tab active" id="Trades">trades</button>
+        <button class="page__tab" id="Tracked">tracked influencers</button>
+        <button class="page__tab" id="Sniper">Sniper bot</button>
+      </div>
+      <div class="trade-list" id="trade-list">
+       
+        <!-- More trades -->
+      </div>
+
+      <div class="trade-list" id="tracked-list">
+        <!-- More trades -->
+      </div>
+
+      <div class="sniper" id="sniper-list">
+        <!-- <h2>Tracking</h2> -->
+          <label class="switch">
+            <input type="checkbox" id="antiMev">
+            Anti Mev
+            <span class="slider"></span> 
+          </label>
+      
+          <div class="form-group">
+            <label for="tokenSymbol">Token Symbol</label>
+            <input type="text" id="tokenSymbol" placeholder="Add token symbol">
+          </div>
+      
+          <div class="form-group">
+            <label for="devWallet">Dev Wallet</label>
+            <input type="text" id="devWallet" placeholder="Add wallet address">
+          </div>
+      
+          <div class="form-group">
+            <label for="maxSolAllow">Max Sol Allow</label>
+            <input type="number" id="maxSolAllow" value="2.35">
+          </div>
+      
+          <div class="form-group">
+            <label class="checklabel">
+              <input type="checkbox" id="tipAmountCheckbox"> Tip Amount
+            </label>
+            <input type="number" id="tipAmount" value="0.05" disabled="">
+          </div>
+      
+          <div class="form-group">
+            <label class="checklabel">
+              <input type="checkbox" id="priorityFeeCheckbox"> Priority Fee
+            </label>
+            <input type="number" id="priorityFee" value="0.2" disabled="">
+          </div>
+      
+          <label class="switch">
+            <input type="checkbox" id="autoSell">
+             Auto Sell <span class="slider"></span>
+          </label>
+      
+     
+
+          <button class="track" id="Track">Track</button>
+      </div>
+
+
+      
+      <div class="left_blocks">
+        <div class="left_blocks-1">
+            Keep an eye on trades from the most influential wallets.
+        </div>
+        <div class="left_blocks-2">
+            Spot new opportunities with trending tokens before the crowd.
+        </div>
+        <div class="left_blocks-3">
+            Dive deep into wallet analysis to uncover the most profitable strategies.
+        </div>
+      </div>
+
+      <div class="right_blocks">
+        <div class="left_blocks-1">
+            Track trades from the top-performing wallets.
+        </div>
+        <div class="left_blocks-2">
+            Monitor high-value wallet activity.
+        </div>
+        <div class="left_blocks-3">
+            Analyze trades from key wallets.
+        </div>
+      </div>
+ 
+
+     
+    </main>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+          <h2>Tracking</h2>
+          <label class="switch">
+            <input type="checkbox" id="antiMev">
+            Anti Mev
+            <span class="slider"></span> 
+          </label>
+      
+          <div class="form-group">
+            <label for="tokenSymbol">Token Symbol</label>
+            <input type="text" id="tokenSymbol" placeholder="Add token symbol">
+          </div>
+      
+          <div class="form-group">
+            <label for="devWallet">Dev Wallet</label>
+            <input type="text" id="devWallet" placeholder="Add wallet address">
+          </div>
+      
+          <div class="form-group">
+            <label for="maxSolAllow">Max Sol Allow</label>
+            <input type="number" id="maxSolAllow" value="2.35">
+          </div>
+      
+          <div class="form-group">
+            <label class="checklabel">
+              <input type="checkbox" id="tipAmountCheckbox"> Tip Amount
+            </label>
+            <input type="number" id="tipAmount" value="0.05" disabled="">
+          </div>
+      
+          <div class="form-group">
+            <label class="checklabel">
+              <input type="checkbox" id="priorityFeeCheckbox"> Priority Fee
+            </label>
+            <input type="number" id="priorityFee" value="0.2" disabled="">
+          </div>
+      
+          <label class="switch">
+            <input type="checkbox" id="autoSell">
+             Auto Sell <span class="slider"></span>
+          </label>
+      
+          <button class="close-btn" id="closeModal">X</button>
+
+          <button class="track" id="Track">Track</button>
+        </div>
+      </div>
+    
+
+<script src="js/index.js"></script>
+  
+
+</body></html>
